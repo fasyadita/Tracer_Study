@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/homepage', function () {
     return view('home');
+});
+
+// Group route untuk admin
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
 });
