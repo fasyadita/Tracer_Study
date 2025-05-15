@@ -1,4 +1,6 @@
+@extends('admin.template')
 
+@section('content')
 <div class="row mb-4">
     <div class="col-12">
         <h4 class="fw-bold mb-4">Dashboard</h4>
@@ -68,7 +70,4 @@
         </div>
     </div>
 </div>
-                    <!-- / Content -->
-
-                    <div class="content-backdrop fade"></div>
-                </div>
+@endsection

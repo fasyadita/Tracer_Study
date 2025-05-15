@@ -19,7 +19,7 @@ Route::get('/homepage', function () {
 
 // Group route untuk admin
 Route::get('/admin', function () {
-    return view('admin');
+    return view('admin.template');
 });
 
 Route::get('/admin/dashboard', function () {

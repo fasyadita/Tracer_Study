@@ -106,8 +106,9 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-fluid flex-grow-1 container-p-y">
-                      <!-- Dashboard Content -->
-                    @include('admin.dashboard')
+                        @yield('content')
+                    </div>
+                </div>
                 <!-- Content wrapper -->
             </div>
             <!-- / Layout page -->

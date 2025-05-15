@@ -56,7 +56,7 @@
         </div>
       </div><!-- End Team Member -->
 
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="member">
           <div class="pic"><img src="{{ asset('dewi/assets/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
           <div class="member-info">
