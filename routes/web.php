@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,8 @@ Route::get('/admin', function () {
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
+});
+
+Route::get('/pie', function () {
+    return view('charts.pie');
 });
