@@ -9,8 +9,10 @@
 
  <div class="col-md-12 mb-4">
         <div class="card p-4">
-            <span class="fw-bold fs-5 mb-2">Rekap Hasil Tracer Study Lulusan
-            <button class="btn btn-info btn-sm">Export Data</button> </span>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0">Rekap Hasil Tracer Study Lulusan</h5>
+            <button class="btn btn-info btn-sm">Export Data</button>
+            </div>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
             <div class="table-responsive">
             <table class="table table-bordered text-center align-middle">
