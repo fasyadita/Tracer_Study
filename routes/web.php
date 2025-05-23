@@ -52,6 +52,10 @@ Route::get('/admin/pengguna/generate', function () {
     return view('admin.generatepengguna');
 });
 
+Route::get('/admin/graduates', function () {
+    return view('admin.datalulusan');
+});
+
 Route::get('/admin/pengguna/tambah-form', function () {
     return view('admin.tambahform');
 });
@@ -66,4 +70,12 @@ Route::get('/admin/employers', function() {
 
 Route::get('/admin/report/survey-kepuasan', function() {
     return view('admin.rekapSurvei');
+});
+
+Route::get('/admin/report/belum-mengisi-pengguna', function () {
+    return view('admin.belummengisipengguna');
+});
+
+Route::get('/admin/report/belum-mengisi-lulusan', function () {
+    return view('admin.belummengisilulusan');
 });
