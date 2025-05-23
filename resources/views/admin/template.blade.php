@@ -72,7 +72,7 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ url('/admin/generate-link-Lulusan') }}" class="menu-link">
+                        <a href="{{ url('/admin/generatelulusan') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-link"></i>
                             <div data-i18n="Chat">Generate Link</div>
                         </a>
@@ -89,13 +89,13 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ url('/admin/generate-link-PenggunaLulusan') }}" class="menu-link">
+                        <a href="{{ url('/admin/generatepengguna') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-link"></i>
                             <div data-i18n="Chat">Generate Link</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ url('/admin/tambah-form') }}" class="menu-link">
+                        <a href="{{ url('/admin/tambahform') }}" class="menu-link">
                             <i class="menu-icon tf-icons ri-file-add-line"></i>
                             <div data-i18n="Chat">Tambah Form</div>
                         </a>
@@ -114,7 +114,7 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="{{ url('/admin/report/tracer-study') }}" class="menu-link">
+                                <a href="{{ url('/admin/rekaplulusan') }}" class="menu-link">
                                     <div data-i18n="Tracer Study Lulusan">Tracer Study Lulusan</div>
                                 </a>
                             </li>
