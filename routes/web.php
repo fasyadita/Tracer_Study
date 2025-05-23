@@ -60,4 +60,10 @@ Route::get('/admin/laporan/rekaplulusan', function () {
     return view('admin.rekaplulusan');
 });
 
+Route::get('/admin/employers', function() {
+    return view('admin.employers');
+});
 
+Route::get('/admin/report/survey-kepuasan', function() {
+    return view('admin.rekapSurvei');
+});
