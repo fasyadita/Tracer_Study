@@ -9,20 +9,37 @@
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                     aria-label="Close"></button>
             </div>
-            <form>
+            <form action="{{ url('admin/login') }}" method="POST">
+                @csrf
                 <div class="modal-body px-4 py-3">
+                    <!-- Pesan Error -->
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <!-- Username Field -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="username" class="form-label">Username</label>
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="username"
+                                value="{{ old('username') }}" required>
                         </div>
                     </div>
+
+                    <!-- Password Field -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                            <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="••••••••" required>
                         </div>
                     </div>
                 </div>
