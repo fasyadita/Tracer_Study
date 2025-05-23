@@ -27,6 +27,10 @@ Route::prefix('admin')->middleware('auth:admin')->group(function () {
 
     // Route untuk halaman dashboard admin setelah login berhasil
     Route::get('dashboard', [AdminAuthController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('generatelulusan',[AdminAuthController::class, 'generatelulusan'])->name('admin.generatelulusan');
+    Route::get('generatepengguna',[AdminAuthController::class, 'generatepengguna'])->name('admin.generatepengguna');
+    Route::get('tambahform',[AdminAuthController::class, 'tambahform'])->name('admin.tambahform');
+    Route::get('rekaplulusan',[AdminAuthController::class, 'rekaplulusan'])->name('admin.rekaplulusan');
 });
 
 // Route for displaying the login form (outside the 'admin' middleware group)
@@ -41,4 +45,19 @@ Route::post('admin/login', [AdminAuthController::class, 'login']);
 Route::get('/pie', function () {
     return view('charts.pie');
 });
+
+
+
+Route::get('/admin/pengguna/generate', function () {
+    return view('admin.generatepengguna');
+});
+
+Route::get('/admin/pengguna/tambah-form', function () {
+    return view('admin.tambahform');
+});
+
+Route::get('/admin/laporan/rekaplulusan', function () {
+    return view('admin.rekaplulusan');
+});
+
 

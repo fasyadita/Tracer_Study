@@ -39,6 +39,27 @@ class AdminAuthController extends Controller
      */
     public function dashboard()
     {
-        return view('admin.template');
+        return view('admin.dashboard');
+    }
+
+    public function generatelulusan()
+    {
+        return view('admin.generatelulusan');
+    }
+
+    public function generatepengguna()
+    {
+        return view('admin.generatepengguna');
+    }
+
+    public function tambahform()
+    {
+        return view('admin.tambahform');
+    }
+
+    public function rekaplulusan()
+    {
+        return view('admin.rekaplulusan');
     }
 }
+

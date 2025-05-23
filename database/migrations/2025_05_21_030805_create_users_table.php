@@ -12,7 +12,8 @@ class CreateUsersTable extends Migration
             $table->string('username');
             $table->string('password');
             $table->enum('role', ['admin', 'alumni', 'stakeholder']);  // Role untuk admin, alumni, atau stakeholder
-            $table->string('name');
+            $table->string('first_name');
+            $table->string('last_name');
             $table->string('email');
             $table->string('phone_number', 15);
             $table->timestamps();  // created_at and updated_at
